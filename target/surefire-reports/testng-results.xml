@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Freshii suite" duration-ms="202162" started-at="2020-08-14T17:33:03 EDT" finished-at="2020-08-14T17:36:25 EDT">
+    <groups>
+    </groups>
+    <test name="TestNGTest1" duration-ms="202162" started-at="2020-08-14T17:33:03 EDT" finished-at="2020-08-14T17:36:25 EDT">
+      <class name="com.testCases.TC_Android_001">
+        <test-method status="PASS" signature="Capabilities(java.lang.String)[pri:0, instance:com.testCases.TC_Android_001@61f8bee4]" name="Capabilities" is-config="true" duration-ms="42555" started-at="2020-08-14T17:33:04 EDT" finished-at="2020-08-14T17:33:46 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[emulator]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Capabilities -->
+        <test-method status="PASS" signature="SignUpTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.testCases.TC_Android_001@61f8bee4]" name="SignUpTest" duration-ms="24172" started-at="2020-08-14T17:33:46 EDT" data-provider="getData" finished-at="2020-08-14T17:34:11 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test case1: positive sign up flow]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Freshii]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Lover]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[freshiilover@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test1234]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[add payment method]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUpTest -->
+        <test-method status="PASS" signature="quitserver()[pri:0, instance:com.testCases.TC_Android_001@61f8bee4]" name="quitserver" is-config="true" duration-ms="50" started-at="2020-08-14T17:34:11 EDT" finished-at="2020-08-14T17:34:11 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitserver -->
+        <test-method status="PASS" signature="Capabilities(java.lang.String)[pri:0, instance:com.testCases.TC_Android_001@61f8bee4]" name="Capabilities" is-config="true" duration-ms="42560" started-at="2020-08-14T17:34:11 EDT" finished-at="2020-08-14T17:34:54 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[emulator]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Capabilities -->
+        <test-method status="FAIL" signature="SignUpTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.testCases.TC_Android_001@61f8bee4]" name="SignUpTest" duration-ms="17105" started-at="2020-08-14T17:34:54 EDT" data-provider="getData" finished-at="2020-08-14T17:35:11 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test case2: invalid email flow]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Freshii]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Lover]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[freshiilover]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test1234]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Purposely fail:please enter a valid email]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [please enter a valid email] but found [Purposely fail:please enter a valid email]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [please enter a valid email] but found [Purposely fail:please enter a valid email]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at com.utilities.CheckPoint.validationResult(CheckPoint.java:16)
+at com.testCases.TC_Android_001.SignUpTest(TC_Android_001.java:74)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUpTest -->
+        <test-method status="PASS" signature="quitserver()[pri:0, instance:com.testCases.TC_Android_001@61f8bee4]" name="quitserver" is-config="true" duration-ms="51" started-at="2020-08-14T17:35:12 EDT" finished-at="2020-08-14T17:35:12 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitserver -->
+        <test-method status="PASS" signature="Capabilities(java.lang.String)[pri:0, instance:com.testCases.TC_Android_001@61f8bee4]" name="Capabilities" is-config="true" duration-ms="37216" started-at="2020-08-14T17:35:12 EDT" finished-at="2020-08-14T17:35:50 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[emulator]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Capabilities -->
+        <test-method status="FAIL" signature="SignUpTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.testCases.TC_Android_001@61f8bee4]" name="SignUpTest" duration-ms="34493" started-at="2020-08-14T17:35:50 EDT" data-provider="getData" finished-at="2020-08-14T17:36:24 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test case3: invalid password flow]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Freshii]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Lover]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[freshiilover@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[please enter a valid password (minimum 8 characters with at least 1 capital letter and 1 number)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-8UCFDRT', ip: '192.168.2.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: Freshii_v2.0.23_apkpure.com..., appPackage: com.freshii.freshii, automationName: uiautomator2, databaseEnabled: false, desired: {app: Freshii_v2.0.23_apkpure.com..., automationName: uiautomator2, platformName: android}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2220, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 66, takesScreenshot: true, viewportRect: {height: 2022, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 017e9dc9-c3a3-4605-bd13-432c775751ca
+*** Element info: {Using=id, value=com.freshii.freshii:id/imgHome}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-8UCFDRT', ip: '192.168.2.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: Freshii_v2.0.23_apkpure.com..., appPackage: com.freshii.freshii, automationName: uiautomator2, databaseEnabled: false, desired: {app: Freshii_v2.0.23_apkpure.com..., automationName: uiautomator2, platformName: android}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2220, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 66, takesScreenshot: true, viewportRect: {height: 2022, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 017e9dc9-c3a3-4605-bd13-432c775751ca
+*** Element info: {Using=id, value=com.freshii.freshii:id/imgHome}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at com.pageObjects.LandingPage.retryingFindClick(LandingPage.java:65)
+at com.pageObjects.LandingPage.clickHomeIcon(LandingPage.java:48)
+at com.testCases.TC_Android_001.SignUpTest(TC_Android_001.java:32)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUpTest -->
+        <test-method status="PASS" signature="quitserver()[pri:0, instance:com.testCases.TC_Android_001@61f8bee4]" name="quitserver" is-config="true" duration-ms="51" started-at="2020-08-14T17:36:25 EDT" finished-at="2020-08-14T17:36:25 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitserver -->
+      </class> <!-- com.testCases.TC_Android_001 -->
+    </test> <!-- TestNGTest1 -->
+  </suite> <!-- Freshii suite -->
+</testng-results>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Freshii suite]">
+  <parameter name="deviceType" value="emulator"/>
+  <listeners>
+    <listener class-name="com.utilities.AppiumListener"/>
+  </listeners>
+  <test thread-count="5" name="TestNGTest1(failed)">
+    <classes>
+      <class name="com.testCases.TC_Android_001">
+        <methods>
+          <include name="Capabilities"/>
+          <include name="quitserver"/>
+          <include name="SignUpTest" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- com.testCases.TC_Android_001 -->
+    </classes>
+  </test> <!-- TestNGTest1(failed) -->
+</suite> <!-- Failed suite [Freshii suite] -->

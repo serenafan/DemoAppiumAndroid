@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 203.259 s <<< FAILURE! - in TestSuite
+com.testCases.TC_Android_001.SignUpTest  Time elapsed: 18.602 s  <<< FAILURE!
+java.lang.AssertionError: expected [please enter a valid email] but found [Purposely fail:please enter a valid email]
+	at com.testCases.TC_Android_001.SignUpTest(TC_Android_001.java:74)
+
+com.testCases.TC_Android_001.SignUpTest  Time elapsed: 35.171 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-8UCFDRT', ip: '192.168.2.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: Freshii_v2.0.23_apkpure.com..., appPackage: com.freshii.freshii, automationName: uiautomator2, databaseEnabled: false, desired: {app: Freshii_v2.0.23_apkpure.com..., automationName: uiautomator2, platformName: android}, deviceApiLevel: 29, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2220, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 66, takesScreenshot: true, viewportRect: {height: 2022, left: 0, top: 66, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 017e9dc9-c3a3-4605-bd13-432c775751ca
+*** Element info: {Using=id, value=com.freshii.freshii:id/imgHome}
+	at com.testCases.TC_Android_001.SignUpTest(TC_Android_001.java:32)
+

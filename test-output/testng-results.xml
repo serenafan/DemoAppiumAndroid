@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Freshii suite" duration-ms="180721" started-at="2020-08-14T17:22:22 EDT" finished-at="2020-08-14T17:25:23 EDT">
+    <groups>
+    </groups>
+    <test name="TestNGTest1" duration-ms="180721" started-at="2020-08-14T17:22:22 EDT" finished-at="2020-08-14T17:25:23 EDT">
+      <class name="com.testCases.TC_Android_001">
+        <test-method status="PASS" signature="Capabilities(java.lang.String)[pri:0, instance:com.testCases.TC_Android_001@69a3d1d]" name="Capabilities" is-config="true" duration-ms="39323" started-at="2020-08-14T17:22:23 EDT" finished-at="2020-08-14T17:23:03 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[emulator]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Capabilities -->
+        <test-method status="PASS" signature="SignUpTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.testCases.TC_Android_001@69a3d1d]" name="SignUpTest" duration-ms="22513" started-at="2020-08-14T17:23:03 EDT" data-provider="getData" finished-at="2020-08-14T17:23:25 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test case1: positive sign up flow]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Freshii]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Lover]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[freshiilover@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test1234]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[add payment method]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUpTest -->
+        <test-method status="PASS" signature="quitserver()[pri:0, instance:com.testCases.TC_Android_001@69a3d1d]" name="quitserver" is-config="true" duration-ms="52" started-at="2020-08-14T17:23:26 EDT" finished-at="2020-08-14T17:23:26 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitserver -->
+        <test-method status="PASS" signature="Capabilities(java.lang.String)[pri:0, instance:com.testCases.TC_Android_001@69a3d1d]" name="Capabilities" is-config="true" duration-ms="38895" started-at="2020-08-14T17:23:26 EDT" finished-at="2020-08-14T17:24:05 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[emulator]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Capabilities -->
+        <test-method status="FAIL" signature="SignUpTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.testCases.TC_Android_001@69a3d1d]" name="SignUpTest" duration-ms="18043" started-at="2020-08-14T17:24:05 EDT" data-provider="getData" finished-at="2020-08-14T17:24:23 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test case2: invalid email flow]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Freshii]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Lover]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[freshiilover]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test1234]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Purposely fail:please enter a valid email]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [please enter a valid email] but found [Purposely fail:please enter a valid email]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [please enter a valid email] but found [Purposely fail:please enter a valid email]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at com.utilities.CheckPoint.validationResult(CheckPoint.java:16)
+at com.testCases.TC_Android_001.SignUpTest(TC_Android_001.java:74)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUpTest -->
+        <test-method status="PASS" signature="quitserver()[pri:0, instance:com.testCases.TC_Android_001@69a3d1d]" name="quitserver" is-config="true" duration-ms="52" started-at="2020-08-14T17:24:23 EDT" finished-at="2020-08-14T17:24:23 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitserver -->
+        <test-method status="PASS" signature="Capabilities(java.lang.String)[pri:0, instance:com.testCases.TC_Android_001@69a3d1d]" name="Capabilities" is-config="true" duration-ms="40235" started-at="2020-08-14T17:24:23 EDT" finished-at="2020-08-14T17:25:04 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[emulator]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Capabilities -->
+        <test-method status="PASS" signature="SignUpTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.testCases.TC_Android_001@69a3d1d]" name="SignUpTest" duration-ms="18597" started-at="2020-08-14T17:25:04 EDT" data-provider="getData" finished-at="2020-08-14T17:25:22 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test case3: invalid password flow]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Freshii]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Lover]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[freshiilover@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[please enter a valid password (minimum 8 characters with at least 1 capital letter and 1 number)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignUpTest -->
+        <test-method status="PASS" signature="quitserver()[pri:0, instance:com.testCases.TC_Android_001@69a3d1d]" name="quitserver" is-config="true" duration-ms="51" started-at="2020-08-14T17:25:23 EDT" finished-at="2020-08-14T17:25:23 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitserver -->
+      </class> <!-- com.testCases.TC_Android_001 -->
+    </test> <!-- TestNGTest1 -->
+  </suite> <!-- Freshii suite -->
+</testng-results>
