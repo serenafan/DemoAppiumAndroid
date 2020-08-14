@@ -67,15 +67,15 @@ public class TC_Android_001 extends BaseClass{
 		//Here to verify if actual result is displayed as expected result
 		if(testCaseType.equals("Test case1: positive sign up flow"))
 		{
-			CheckPoint.validationResult(expectedResult, registerPg.getToolBarTitle());
+			CheckPoint.validationResult(registerPg.getToolBarTitle(),expectedResult);
 		}
 		else if (testCaseType.equals("Test case2: invalid email flow"))
 		{
-			CheckPoint.validationResult(expectedResult, registerPg.getEmailErrMsg());
+			CheckPoint.validationResult(registerPg.getEmailErrMsg(), expectedResult);
 		}
 		else 
 		{
-			CheckPoint.validationResult(expectedResult, registerPg.getPassWdErrMsg());
+			CheckPoint.validationResult(registerPg.getPassWdErrMsg(), expectedResult);
 		}
 			
 		}
