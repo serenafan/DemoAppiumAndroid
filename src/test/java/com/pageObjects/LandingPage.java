@@ -61,7 +61,7 @@ public LandingPage(AndroidDriver<AndroidElement> driver) {
 		    int attempts = 0;
 		    while(attempts < 5) {
 		        try {
-		           Thread.sleep(1000);
+		           Thread.sleep(10000);
 		           ldriver.findElement(by).click();
 		            break;
 		        } catch(StaleElementReferenceException e) {
