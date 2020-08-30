@@ -52,7 +52,7 @@ public class TC_Android_001 extends BaseClass{
 		logger.info("Enter last name: "+lastName);
 		
 		//Enter email
-		registerPg.EnterEmail(randomestring(2)+email);
+		registerPg.EnterEmail(randomestring(4)+email);
 		logger.info("Enter email:"+randomestring(2)+email);
 		
 		//Enter password
