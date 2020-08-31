@@ -45,7 +45,7 @@ public RegisterPage(AndroidDriver<AndroidElement> driver) {
     WebElement submitBtn;
     
     //Find toolbar title
-    @AndroidFindBy(xpath="//*[@text='add payment method'])
+    @AndroidFindBy(xpath="//*[@text='add payment method']")
     WebElement toolBarTitle;
     
     //Find email error msg
