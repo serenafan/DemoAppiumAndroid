@@ -98,7 +98,6 @@ public class BaseClass
 	public  void Capabilities(String deviceType) throws IOException, InterruptedException {
 	    killAllNodes();
 	    startServer();
-	    startEmulator();
 	    //Initialize logger
 	    logger=Logger.getLogger("Freshii");// Project Name 
 	    PropertyConfigurator.configure("log4j.properties"); // Added Logger
